@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let value = +prompt('Введите число');
+
+        if (value > 0) {
+            alert('Число положительное');
+        } else if (value < 0) {
+            alert('Число отрицательное');
+        } else {
+            alert(0);
+        }
+    </script>
+
+    <script>
+        let a = +prompt('Введите свой возраст')
+        if (a >= 0 && a <= 120) {
+            alert('вы говорите правду')
+        } else if (a < 0) {
+            alert('Вы обманываете')
+        } else {
+            alert('Вам так много лет?')
+        }
+    </script>
+    <script>
+        let a = +prompt('Введите часы');
+        let b = +prompt('Введите минуты');
+        let c = + prompt('Введите секунды');
+        if (a >= 0 && a <= 23 && b >= 0 && b <= 59 && c >= 0 && c <= 60)
+            alert('время:' + a + ':' + b + ':' + c);
+        else {
+            alert('Время введено не корректно')
+        }
+    </script>
+    <script>
+        let x = +prompt('Введите значение X')
+        let y = +prompt('Введите значение Y')
+        if (x > 0 && y > 0) {
+            alert('Первая четверть')
+        } else if (x < 0 && y > 0) {
+            alert('Вторая четверть')
+        } else if (x < 0 && y < 0) {
+            alert('Третья четверть')
+        } else if (x > 0 && y < 0) {
+            alert('Четвертая четверть')
+        }
+    </script>
+</body>
+
+</html>
